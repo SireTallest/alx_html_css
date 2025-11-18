@@ -3,6 +3,7 @@ body, main{
 }
 body{
     flex-direction: column;
+    background-color: azure;
 }
 main{
     flex-direction: row;
