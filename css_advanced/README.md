@@ -83,8 +83,8 @@ Contributions are welcome! If you have suggestions for improving this landing pa
 
 **SireTallest**
 
-*   LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/abdulbaki-oladepo-4998b6213/)
-*   Twitter: [Your Twitter Profile](https://x.com/sire_tallest)
+*   LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/abdulbaki-oladepo-4998b6213/)
+*   Twitter: [Twitter Profile](https://x.com/sire_tallest)
 
 ## Badges
 
