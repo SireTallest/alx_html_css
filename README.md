@@ -19,7 +19,7 @@ alx_html_css/
 |    |── index.html
 |    |── styles.css
 |    |── images
-|    ├── assets/              # Images, icons, and other media assets
+|    ├── asset/              # Images, icons, and other media assets
 |    |── README      
 |    ├── fonts/               # Custom font files used across     projects
 
