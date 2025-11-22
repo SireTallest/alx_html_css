@@ -11,12 +11,19 @@ This repository contains a set of HTML & CSS projects and exercises as part of t
 alx_html_css/
 │
 ├── css_basic/           # Basic CSS exercises and foundational styling
+|    |── base.css
+|    |── index.html
+|    |── styles.css
+|    |── tweets.html
 ├── css_advanced/        # More advanced CSS projects (grid, flex, animations, etc.)
+|    |── index.html
+|    |── styles.css
+|    |── images
+|    |── README      
 ├── fonts/               # Custom font files used across projects
 ├── assets/              # Images, icons, and other media assets
 ├── index.html           # (Optional) Main landing/demo page
 ├── style.css            # (Optional) Shared global stylesheet
-└── LICENSE              # Project license (MIT)
 └── README               #Project Documentation 
 
 ```
