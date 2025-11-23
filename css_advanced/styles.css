@@ -10,44 +10,44 @@
     --primary: #C271FF;
     --secondary: #071629;
 }
-
+/* 
 body {
   font-family: "Source Sans 3", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-}
+} */
 @font-face {
   font-family: 'source-sans-pro';
-  src: url('/fonts/source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
+  src: url('fonts/source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'source-sans-pro-light';
-  src: url('/fonts/source-sans-pro/SourceSansPro-Light.otf') format('opentype');
+  src: url('fonts/source-sans-pro/SourceSansPro-Light.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'source-sans-pro-bold';
-  src: url('/fonts/source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
+  src: url('fonts/source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'source-sans-pro-italic';
-  src: url('/fonts/source-sans-pro/SourceSansPro-It.otf') format('opentype');
+  src: url('fonts/source-sans-pro/SourceSansPro-It.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'spincycle-ot';
-  src: url('/fonts/Spin-Cycle-OT/spincycle_ot.otf') format('opentype');
+  src: url('fonts/Spin-Cycle-OT/spincycle_ot.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
 }
@@ -93,7 +93,7 @@ ul li a {
 
 ul li a:hover {
   color: var(--secondary);
-  transition: all 0.8s ease;
+  transition: all 0.8s;
 }
 
 .header-text {
@@ -142,7 +142,9 @@ h1 {
 .free-membership button:hover {
     background-color: var(--secondary);
     color: var(--primary);
-    transition: all 0.3s ease;
+    transition: all 1s ease;
+    box-shadow: #071629 0px 0px 20px 0px;
+    border: 1px solid var(--primary);
 }
 
 .header-pros {
@@ -241,6 +243,8 @@ blockquote {
     font-size: 22px;
     color: var(--white);
     text-align: left;
+    line-height: 34px;
+    font-weight: 600;
 }
 
 .quote-main p {
@@ -248,6 +252,7 @@ blockquote {
     font-size: 22px;
     color: var(--white);
     text-align: left;
+    line-height: 34px;
 }
 
 main .tutorial {
@@ -282,6 +287,19 @@ main .popular-tutorial h2 {
     display: flex;
     flex-direction: column;
     gap: .7rem;
+}
+.tutorial-card::after{
+    content: '';
+    background-image: url(./asset/play.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0.9;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    margin-left: 130px;
+    margin-top: 80px;
 }
 
 .tutorial-card:hover {
@@ -342,6 +360,9 @@ main .popular-tutorial h2 {
 .empty-star {
     color: var(--secondary);
     opacity: .2;
+}
+.tutorial-card p{
+    color: var(--primary);
 }
 
 main .membership {
