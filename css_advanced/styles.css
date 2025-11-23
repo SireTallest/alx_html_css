@@ -1,0 +1,560 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white: #FFFFFF;
+    --off-white: #D8D8D8;
+    --black: #000000;
+    --primary: #C271FF;
+    --secondary: #071629;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'source-sans-pro';
+  src: url('/fonts/source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'source-sans-pro-light';
+  src: url('/fonts/source-sans-pro/SourceSansPro-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'source-sans-pro-bold';
+  src: url('/fonts/source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'source-sans-pro-italic';
+  src: url('/fonts/source-sans-pro/SourceSansPro-It.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'spincycle-ot';
+  src: url('/fonts/Spin-Cycle-OT/spincycle_ot.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+header {
+  background: url('./asset/bg-img.png');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  padding-bottom: 5rem;
+  color: var(--white);
+}
+
+
+nav {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} 
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  font-family: 'source sans 3',  sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  color: var(--white);
+}
+
+ul li a:hover {
+  color: var(--secondary);
+  transition: all 0.8s ease;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+h1 {
+    font-family: source-sans-pro-bold, sans-serif;
+    font-size: 120px;
+    color: var(--white);
+    margin-top: 50px;
+}
+
+.header-subtext {
+    display: flex;
+    gap: 4rem;
+}
+
+.header-subtext span {
+    font-family: source sans 3, sans-serif;
+    font-size: 16px;
+    color: var(--white);
+}
+
+.header-text button,
+.free-membership button {
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 22px;
+    border: none;
+    padding: 1rem 2rem;
+    font-family: source-sans-pro, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header-text button:hover,
+.free-membership button:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+    transition: all 0.3s ease;
+}
+
+.header-pros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    gap: 4rem;
+}
+
+.header-pros h2,
+.popular-tutorial h2,
+.free-membership h2 {
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    color: var(--white);
+}
+
+.header-pros h2 span,
+.popular-tutorial span,
+.free-membership span {
+    color: var(--primary);
+    font-family: source-sans-pro-bold, sans-serif;
+    font-weight: 500;
+}
+
+.pros-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pros-list img,
+main .quote img {
+    width: 150px;
+}
+
+.pros-list-item {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.pros-list-item h3 {
+    font-family: source-sans-pro-bold, sans-serif;
+    font-size: 18px;
+    color: var(--white);
+    text-align: center;
+}
+
+.pros-list-item p {
+    font-family: source-sans-pro-italic, sans-serif;
+    font-size: 16px;
+    color: var(--white);
+    text-align: center;
+}
+main {
+    width: 100%;
+}
+
+main .quote {
+    background-color: var(--primary);
+    padding: 10rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+main .quote-main {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.quote-main {
+    width: 80%;
+}
+
+blockquote {
+    font-family: source-sans-pro, sans-serif;
+    font-size: 22px;
+    color: var(--white);
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.quote-main h3 {
+    font-family: source-sans-pro-bold, sans-serif;
+    font-size: 22px;
+    color: var(--white);
+    text-align: left;
+}
+
+.quote-main p {
+    font-family: source-sans-pro-italic, sans-serif;
+    font-size: 22px;
+    color: var(--white);
+    text-align: left;
+}
+
+main .tutorial {
+    width: 100%;
+    padding: 10rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+main .popular-tutorial {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+main .popular-tutorial h2 {
+    color: rgb(70, 69, 69);
+}
+
+.tutorial-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tutorial-card {
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+.tutorial-card:hover {
+    cursor: pointer;
+    background-color: #fbfbfb
+}
+
+.tutorial-card h3 {
+    font-family: source-sans-pro-bold, sans-serif;
+    padding: 0 10px;
+    color: var(--secondary);
+    text-align: left;
+    font-size: 16px;
+}
+
+.tutorial-card p {
+    font-family: source-sans-pro, sans-serif;
+    padding: 0 10px;
+    color: var(--secondary);
+    opacity: 0.5;
+    text-align: left;
+    font-size: 14px;
+}
+
+.tutorial-card .tutorial-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    padding: 0 10px;
+}
+
+.tutorial-card .tutorial-profile img {
+    width: 30px;
+}
+
+.tutorial-card .tutorial-profile h4 {
+    font-family: source-sans-pro, sans-serif;
+    font-size: 14px;
+    color: var(--primary);
+}
+
+.star-review {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 1rem;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    color: var(--primary);
+}
+
+.empty-star {
+    color: var(--secondary);
+    opacity: .2;
+}
+
+main .membership {
+    width: 100%;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    padding: 10rem 0;
+}
+
+.free-membership {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.membership-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.membership-list-item {
+    width: 257px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.membership-list-item h3 {
+    font-family: source-sans-pro, sans-serif;
+    font-size: 18px;
+    color: var(--white);
+}
+
+.membership-list-item p {
+    font-family: source-sans-pro, sans-serif;
+    font-size: 14px;
+    color: var(--white);
+    opacity: .7;
+}
+
+main .faq {
+    display: flex;
+    justify-content: center;
+    padding: 10rem 0;
+}
+
+.faq-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.faq-container h2 {
+    font-family: source-sans-pro-light, sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.faq-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+}
+
+.faq-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.faq-item h3 {
+    font-family: source-sans-pro, sans-serif;
+    font-size: 16px;
+    color: var(--secondary);
+}
+
+.faq-item p {
+    font-family: source-sans-pro, sans-serif;
+    font-size: 14px;
+    line-height: 1.5rem;
+    color: var(--secondary);
+    opacity: .7;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--secondary);
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer section {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--white);
+    padding-top: 3rem;
+}
+
+.footer-items img {
+    width: 169px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+footer p {
+    color: var(--white);
+    font-family: source-sans-pro, sans-serif;
+    opacity: .3;
+}
+
+
+/* ========================== */
+        /* MEDIA QUERY */
+/* ========================== */
+
+@media (max-width: 1340px) {
+    .tutorial-items,
+    .membership-list,
+    .pros-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        place-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 80px;
+        margin-bottom: 2rem;
+    }
+
+    .pros-list,
+    .tutorial-items,
+    .membership-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        place-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        width: 90%;
+    }
+
+    nav > ul {
+        display: none;
+    }
+
+    .brand-logo {
+        width: 140px;
+    }
+
+    h1 {
+        font-size: 80px;
+        line-height: 1;
+        margin-bottom: 2rem;
+    }
+
+    .pros-list,
+    .tutorial-items,
+    .membership-list,
+    .faq-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5rem;
+        place-items: center;
+    }
+
+    main .quote-main {
+      flex-direction: column;
+    }
+
+    footer {
+        padding: 1rem 0;
+    }
+
+    footer section {
+        width: 90%;
+        gap: 2rem;
+    }
+
+    .footer-items {
+        padding-top: 2rem;
+    }
+ }
