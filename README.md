@@ -19,10 +19,16 @@ alx_html_css/
 |    |── index.html
 |    |── styles.css
 |    |── images
-|    ├── asset/              # Images, icons, and other media assets
+|    ├── asset/              # Images, icons, and other media   assets
 |    |── README      
-|    ├── fonts/               # Custom font files used across     projects
-
+|    ├── fonts/ 
+|── headphones/
+|    |──index.html
+|    |──style.css         # More advanced CSS projects (grid, flex, animations, etc.)
+|    ├── asset/             # Images, icons, and other media   assets     
+|    |──fonts/              # Custom font files used across the projects
+|    |──README            #Project Documentation 
+|     
 ├── index.html           # (Optional) Main landing/demo page
 ├── style.css            # (Optional) Shared global stylesheet
 └── README               #Project Documentation 
