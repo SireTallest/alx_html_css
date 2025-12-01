@@ -27,11 +27,12 @@
 - ⚡ Local assets for images and fonts 🔊📌
 
 __🗂️📁 Folder Structure 🏗️✨__
-_🎧 Headphones/_
-│── 🌍 index.html
-│── 🎨 style.css
-│── 🖼️ assets/
-│── 🔤 fonts/
+🎧 Headphones/
+    │── 🌍 index.html
+    │── 🎨 style.css
+    │── 🖼️ assets/
+    │── 🔤 fonts/
+    │── README
 
 ### Folder/File	Purpose
 - 🌍 index.html	UI structure and layout scaffolding 🧱
