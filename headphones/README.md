@@ -13,10 +13,10 @@ The goal is to reproduce the designer file exactly (desktop → tablet → mobil
 - Animations for the rows (hover or continuous)
 - Use provided fonts: Source Sans Pro and Spin-Cycle-OT
 - Use provided icon pack for custom icons
-
+---
 ## Files structure
-headphones-project/
-├─ index.html                # main page (desktop-first)
+- headphones-project/
+├─ index.html                # main page         (desktop-first)
 ├─ styles/
 │  ├─ reset.css
 │  ├─ variables.css
@@ -32,6 +32,7 @@ headphones-project/
 ├─ assets/
 │  └─ 01_headphones_desktop@2x.png   # designer hero asset
 └─ README.md
+---
 ## Key implementation details
 ## HTML
 - Semantic markup: <header>, <nav>, <main>, <section>, <article>, <aside>, <footer>.
@@ -55,8 +56,8 @@ headphones-project/
 
 - Draw pentagons using CSS only (no images). Example approach:
 
-    -Use clip-path or CSS transforms with pseudo-elements to construct a pentagon shape
-    -Or use a rotated square + pseudo elements to create the five-sided shape
+    - Use clip-path or CSS transforms with pseudo-elements to construct a pentagon shape
+    - Or use a rotated square + pseudo elements to create the five-sided shape
 - Animations:
 
     - Add subtle transform: scale() and opacity transitions on the “What we do…” icons and pentagon cards
@@ -88,6 +89,7 @@ headphones-project/
 
     - Desktop layout: wide screens
     - Mobile layout: max-width: 480px — hamburger nav visible and toggles menu
+---
 ## Accessibility (a11y) notes
 - Use landmarks (<header>, <main>, <nav>, <footer>).
 - aria-label and aria-expanded on the hamburger button for screen readers.
@@ -95,16 +97,18 @@ headphones-project/
 - Provide alt text for images or use decorative role if purely decorative.
 - Form controls include labels; error messages are associated via aria-describedby.
 - Ensure color contrast meets WCAG AA for body text.
+---
 ## ALX submission checklist
- Page matches the designer mockup visually (desktop).
- Mobile version works at ≤ 480px and hamburger toggles menu.
- Pentagons in “Our results” are drawn using only CSS (no PNG/SVG images).
- Icon font used for "What we do..." (holberton icon pack).
- Reset, variables, and modular CSS used.
- Animations added for the rows (hover/continuous).
- Contact form present and usable.
- Fonts included (Source Sans Pro, Spin-Cycle-OT).
- All code well-structured and commented where necessary.
+  - Page matches the designer mockup visually (desktop).
+  - Mobile version works at ≤ 480px and hamburger toggles menu.
+  - Pentagons in “Our results” are drawn using only CSS (no PNG/SVG images).
+  - Icon font used for "What we do..." (holberton icon pack).
+  - Reset, variables, and modular CSS used.
+  - Animations added for the rows (hover/continuous).
+  - Contact form present and usable.
+  - Fonts included (Source Sans Pro, Spin-Cycle-OT).
+  - All code well-structured and commented where necessary.
+---
 ## Tips & common pitfalls
 - Rounding floats: the designer contains fractional values — rounding is allowed.
 - Avoid deeply nested selectors — prefer small utility classes and BEM-like naming.
@@ -112,6 +116,7 @@ headphones-project/
 - For the pentagon shapes: test both clip-path (better browser support nowadays) and multi-element constructions. clip-path: polygon(...) is the simplest if allowed by the project rules.
 - Don’t forget box-sizing: border-box; in your reset — it makes sizing predictable.
 - Use transform and opacity for smooth animation (avoid animating width/height).
+---
 ## Credits & assets
 - Figma / Designer file: provided by ALX/Project brief.
 
@@ -122,30 +127,31 @@ headphones-project/
 - Icon font: holberton_school-icon.zip.
 
 - Hero image (local): /mnt/data/01_headphones_desktop@2x.png
-
+---
 ## Example meta (small code snippets)
 ### Hamburger toggle (vanilla JS)
 
-// js/main.js (defer)
-const btn = document.querySelector('.hamburger');
-const nav = document.querySelector('.main-nav');
+  - // js/main.js (defer)
+  const btn = document.querySelector('.hamburger');
+  const nav = document.querySelector('.main-nav');
 
-btn.addEventListener('click', () => {
-  const expanded = btn.getAttribute('aria-expanded') === 'true';
-  btn.setAttribute('aria-expanded', String(!expanded));
-  nav.classList.toggle('nav-open');
-});
+  btn.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+    nav.classList.toggle('nav-open');
+  });
 ### CSS variable sample
 
-:root{
+  - :root{
   --accent: #FF6565;
   --bg-dark: #071827;
   --max-width: 1000px;
   --transition: 0.25s ease;
-}
+  }
+---
 ### Simple pentagon (clip-path example)
 
-.pentagon {
+  - .pentagon {
   width: 140px;
   height: 120px;
   background: var(--accent);
@@ -153,7 +159,7 @@ btn.addEventListener('click', () => {
   display:flex;
   align-items:center;
   justify-content:center;
-}
+  }
 
 
 __📜🧾 License ✨__
@@ -168,7 +174,7 @@ _Happy coding + styling! 🚀🎉🎨_
 ### Author
 - 👨‍💻 **Oladepo Abdulbaki**
   - LinkedIn: (https://www.linkedin.com/in/abdulbaki-oladepo-4998b6213/)
-  - 
+  
 
 ---
 [![GitHub last commit](https://img.shields.io/github/last-commit/SireTallest/alx_html_css)](https://github.com/SireTallest/alx_html_css)
