@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #000000;
+    --secondary-color: #071629;
+    --text-color: #FFFFFF;
+    --background-color: #121212;
+    --accent-color: #FF6565;
+    --pre-secondary-color: #101929;
+    --pre-secondary-white: #29303D;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'source-sans-pro';
+  src: url('./fonts/source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'source-sans-pro-light';
+  src: url('./fonts/source-sans-pro/SourceSansPro-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'source-sans-pro-bold';
+  src: url('./fonts/source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'source-sans-pro-italic';
+  src: url('./fonts/source-sans-pro/SourceSansPro-It.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'spincycle-ot';
+  src: url('./fonts/Spin-Cycle-OT/spincycle_ot.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+.header-content{
+    align-items: center;
+    text-align: center;
+    background-image: url(./asset/headphones_hero_1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    /* max-width: 100%; */
+    background-repeat: no-repeat;
+    
+
+}
+.header-content .logo{
+    width: auto;
+    height: 40px;
+}
+.header-content h1, a, p, article{
+    color: var(--text-color);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 41px;
+}
+nav li > a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 12px;
+    font-weight: bold;
+}
+nav li > a:hover{
+    color: var(--accent-color);
+}
+
+/* .mobile-nav-links,
+.mobile-nav {
+    display: none;
+} */
+.header-content h1{
+    font-family: 'source-sans-pro', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 220px;
+   
+}
+.header-content p{
+    font-family: 'source-sans-pro-bold', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+button{
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 12px 28px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 4px 4px 6px 6px rgba(0, 0 , 0, 0.2);
+    margin:20px 0 80px 0;
+    cursor: pointer;
+}
+button:hover{
+    
+    background-color: #FF4545;
+    transition: ease-in-out 0.8s;
+}
+
+
+.header-content article{
+    font-family: 'source-sans-pro-light', sans-serif;
+    font-size: 16px;
+    font-style: bold;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 630px;
+    margin: 0 auto;
+}
+
+     /* what-we-do section */
+
+.what-we-do{
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+    background-color: var(--text-color);
+}
+.what-we-do h2{
+    font-family: 'source-sans-pro', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+.what-we-do h3{
+    font-family: 'source-sans-pro-bold', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    color: var(--primary-color);
+}
+.what-we-do p{
+    font-family: './holberton_school-icon/fonts/holberton_school-icon.eot', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 610px;
+    margin: 0 auto 60px auto;
+    color: var(--primary-color);
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+.icons p{
+    font-family: './holberton_school/fonts/holberton_school.woff', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 200px;
+    margin-top: 100px;
+    color: var(--primary-color);
+}
+
+
